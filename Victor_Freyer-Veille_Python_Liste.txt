@@ -1,0 +1,54 @@
+Veille Python : 
+
+	1 - Qu'est-ce qu'une list en Python ?
+		-	les list ou array sont des structures de données permettant de gérer un ensemble de variable centralisé dans "une seule variable"
+
+	2 - Lister les fonctions utiles pour manipuler les listes
+
+		-	len(a)				--> donne la taille de la liste a
+
+		-	append(x)			--> ajoute x à la fin de la liste
+
+		-	extend(iterable)	--> étend la liste avec l'ensemble itérable donné
+
+		-	isert(i,x)			--> insert x à l'emplacement i
+									|-> si i = 0 , l'insert donc en tête de liste
+									|-> si i = len(a) , l'insert en fin de lsite ( comme append() )
+
+		-	remove(x)			--> supprime le premier élément de la liste correspondant à x
+									|-> si plusieurs élément x existe, 1 seul est supprimé ( selui dont l'indice est le plus bas )
+
+		-	pop(i)				--> donne l'élément à l'indice i de la liste et l'enlève de celle-ci
+									|-> l'indice i est facultatif, si on appelle pop() alors il enlève le dernier élément de la liste
+									|-> popleft() équivaut à faire un pop() mais retirant le premier élément de la liste au lieu du dernier
+
+		-	clear()				--> supprime tous les éléments de la liste
+
+		-	index(x)			--> donne la valeur de l'indice du promier objet x trouvé dans la liste
+									|-> si index(x,start,end) , alors recherche l'objet x dans l'interval d'indice demandé
+
+		-	count(x)			--> compte le nombre de fois que l'objet x apparait dans la liste
+
+		-	sort()				--> tri la liste
+									|-> la manière de trié est paramettrable dans les arguments de la fonction, se référer à la doc Python de sorted()
+		-	reverse()			--> inverse la position de tous les élements de la liste
+									|-> le premier devient le dernier, le deuxième l'avant dernier, etc
+
+		-	copy()				--> donne une copie superficielle de la liste
+
+	3 - Comment parcourir une liste
+
+		-	for i in range(len(a))	--> boucle for 'classique'
+		-	while i < len(a)		--> boucle while 'classique'
+		-	for x in liste			--> boucle 'foreach'
+
+	4 - Explorer les listes de compréhentison
+
+		-	Manière de définir ou traité une liste en utilisant des double for et des opérateur entre crochet et récupérer la liste résultante sans effet de bord et en utilisant que des variables locales
+			|-> les dites variables locales ne sont donc utilisable qu'à l'intérieur des opérations faites dans les crochets 
+
+	5 - List vs Tuples
+
+		-	Les Tuples permettes d'être lu et parcouru comme une Liste mais ne peuvent pas être modifiés
+		-	Ils permettent d'avoir plusieur type d'objet différent à l'intérieur
+		-	Ils sont utiles pour avoir plusieurs éléments en sorti d'une fonction
