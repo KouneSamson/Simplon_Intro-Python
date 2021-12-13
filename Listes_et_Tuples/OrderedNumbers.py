@@ -1,7 +1,3 @@
-# -*- coding: utf-8 -*-
-
-#Ordered Numbers
-print("\n_____\n")
 numbers = [13,4,27,9,1994]
 
 print("Format d'origine \n")
