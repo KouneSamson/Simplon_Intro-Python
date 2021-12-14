@@ -95,7 +95,7 @@ for k in sorted(tallMountain.keys()):
 #%% Mountain Height 3
 
 def metersToFeet(m):
-    return (m*3.28)
+    return int(m*3.28)
 
 tallMountain = {"Mount Evrest" : [8848,int(metersToFeet(8848))],
                 "K2"           : [8611,int(metersToFeet(8611))],
@@ -113,9 +113,44 @@ for k in tallMountain.keys() :
     print("\t- %s" % tallMountain[k][0])
 
 print("")
-print("List of Heights in meters :")
+print("List of Heights in feet :")
 for k in tallMountain.keys() :
     print("\t- %s" % tallMountain[k][1])
+
+print("")
+print("5 tallest mountains in meter and feet :")
+for k in tallMountain.keys() :
+    print("\t- %s : %s meters, %s feet" % (k,tallMountain[k][0],tallMountain[k][1]))
+
+#%% Mountain Height 4
+
+tallMountain = {"Mount Evrest" : {"elevation" : 8848,"location" : "Nepal"},
+                "K2"           : {"elevation" : 8611,"location" : "Pakistan"},
+                "Kangchenjunga": {"elevation" : 8586,"location" : "Nepal"},
+                "Lhotse"       : {"elevation" : 8516,"location" : "Nepal"},
+                "Makalu"       : {"elevation" : 8485,"location" : "Nepal"}}
+
+for k in tallMountain.keys() :
+    print(k)
+
+print("")
+for v in tallMountain.values() :
+    print(v["elevation"])
+
+print("")
+for v in tallMountain.values() :
+    print(v["location"])
+
+print("")
+for k in tallMountain.keys() :
+    print("%s is in %s and is %d meters tall."%(k,tallMountain[k]["location"],tallMountain[k]["elevation"]))
+
+
+    
+
+
+
+
 
 
 
