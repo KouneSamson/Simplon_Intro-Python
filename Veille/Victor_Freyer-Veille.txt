@@ -1,4 +1,47 @@
-Veille Python : 
+Veille Python - Variables : 
+
+	1 - Qu'est-ce qu'une variable ?
+		-	une association "Nom" -> "Valeur"
+		-	Un emplacement mémoire alloué d'une taille définie par le Type de la variable
+		-	un objet capable de changer de valeur au cours de l'execution de l'algorithme ( excepté pour les langages de programmation Fonctionnelle )
+		-	En Python les variable sont de type "dynamique" ( il n'est pas nécessaire de le préciser pour que le langage alloue le bon espace mémoire )
+			|-> c'est un comportement récurent dans les langages de Script
+
+	2 - Lister les types de variables
+		-	Nombres entiers ( int || Integer )
+		-	Nombres réels ( double || float ) [ celà dépand de la précision de la virgule voulu et de la taille de l'allocation mémoire recherché ]
+		-	Booléen	( bool ) [ variable en un seul bit qui vaut soit 1 soit 0 et qui est utilisé pour représenté le 'true' et le 'false' de la logique booléenne ]
+		-	Caractères ( char ) [ souvent interprété comme un entiers particulier qui utilise le code ASCII du caractère pour pouvoir ensuite l'afficher correctement ]
+		-	Tableau ( [] ) [ pas un type à part entière mais une structure de donné permettant de traiter un ensemble de variable d'un même type ]
+			|-> Chaines de caractère ( string || str ) [ tableau de char permettant de représenter des mots/phrase/etc encapsulé dans son propre type ]
+
+	3 - Lister les opérateur Python
+		-	= 	affectation
+		-	+	addition
+		-	-	soustraction
+		-	/	division
+		-	%	modulo
+		-	**	puissance
+		-	//	division entière
+		-	==	égalité
+		-	&&	ET logique (AND)
+		-	||	OU logique (OR)
+		-	!	Négation (NOT)
+
+
+	4 - Lister les fonctions utiles pour traiter les chaînes de caractères
+		-	capitalize() --> Met la première lettre de la chaine en majuscule
+		-	lower()		 --> Met tous les caractères en minuscule
+		-	upper()		 --> Met tous les caractères en majuscule
+		-	count()		 --> Compte le nombre de fois qu'un caractère donné est présent dans la chaine
+		-	find()		 --> Donne l'indice auquel se trouve le caractère demandé
+		-	replace()	 --> Remplace une phrase spécifié par une autre
+		-	title()		 --> Met la première lettre de chaque mot en majuscule
+		-	l'addition   --> Concatène les deux chaines de caractères
+
+
+
+Veille Python - Listes : 
 
 	1 - Qu'est-ce qu'une list en Python ?
 		-	les list ou array sont des structures de données permettant de gérer un ensemble de variable centralisé dans "une seule variable"
